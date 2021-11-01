@@ -6,28 +6,40 @@ html{
   background-attachment: fixed;
   
 }
+footer{
+  text-align: center;
+  background-color: rgb(44, 42, 42);
+  color: #fff;
+  padding: 8px 0 2px 0;
+  font-size: 1.2em;
+ 
+}
 
 body{
   direction:rtl;
-  background-color: #fff;
+  background-color: rgb(44, 42, 42);
+ 
+  
   
 }
 ul {
   list-style-type: none;
   margin-top:-10px;
-  margin-bottom:100px;
+  margin-bottom:80px;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(44, 42, 42);
- 
+  background-color: rgb(0, 0, 0);
   font-size: 2em;
+  border-bottom: 1px solid black;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
 li {
   float: right;
-  border: 2px solid rgb(44, 42, 42);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
-  background-color: black;
+  
 }
 .logo,.login,.signup
 {
@@ -46,7 +58,8 @@ li a, .dropbtn {
 }
 li a:hover
 {
-  background-color:rgb(44, 42, 42);
+ 
+  background-color: rgb(44, 42, 42);
   border-radius: 7px;
 }
 
@@ -90,11 +103,16 @@ li.dropdown {
 }
 
 .container {
+    background-color: rgb(245, 245, 245);
     font-family: iransansdn;
     direction: rtl;
     text-align: right;
-    padding: 0 40px 20px 20px;
+    margin: 10px;
+    padding: 0 20px 20px 20px;
     font-size: 1.2em;
+    height: -webkit-fill-available;
+    border: 2px solid rgb(44, 42, 42);
+    border-radius: 50px;
 }
 
 @font-face {

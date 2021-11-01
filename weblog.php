@@ -23,5 +23,9 @@ include_once('header.php');
 </div>
 
 </body>
-
+<footer>
+<?php
+include_once('footer.php');
+?>
+</footer>
 </html>
