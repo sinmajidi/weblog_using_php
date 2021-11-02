@@ -1,4 +1,5 @@
-<ul>
+
+<ul class="top-menu">
   <li><a href="weblog.php">خانه</a></li>
   <li><a href="#news">دسته</a></li>
   <!-- <li class="dropdown">
@@ -13,3 +14,24 @@
   <li class="login"><a href="login.php">ورود</a></li>
   <li class="signup"><a href="register.php">ثبت نام</a></li> 
 </ul>
+<nav class="main-menu">
+      <ul>
+
+        <li>
+          <a href="weblog.php">خانه</a>
+        </li>
+        
+        <li>
+          <a href="#"> دسته  </a>
+        </li>
+
+        <li >
+          <a href="login.php">ورود</a>
+        </li>
+
+        <li>
+          <a href="register.php">ثبت نام </a>
+        </li>
+
+</ul>
+    </nav>
