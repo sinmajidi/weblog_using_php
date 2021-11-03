@@ -1,7 +1,7 @@
 html{
   margin-left:10%;
   margin-right:10%;
-  background-image: url("http://localhost/projects/weblog/weblog/img/bck.jpg");
+  background-image: url("../img/bck.jpg");
   background-repeat:no-repeat;
   background-attachment: fixed;
   
@@ -22,14 +22,17 @@ body{
   
   
 }
-
+/* main-menu_style------------------------------------------------------- */
 .main-menu:hover,
 nav.main-menu.expanded {
   width: 35%;
 }
-
 .main-menu {
-  background-color: black;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(8, 89, 136) 10%,
+    rgb(212, 202, 202) 90%
+  );
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   position: absolute;
@@ -41,58 +44,56 @@ nav.main-menu.expanded {
   overflow: hidden;
   transition: width 0.05s linear;
   z-index: 1000;
-  text-align: center;
-}
 
+  display: block;
+  text-align: center;
+  
+}
 .main-menu ul {
+  background: none;
   border-radius: 0;
+  position: relative;
+  padding-top: 10%;
+  
+  display: none;
+  width:100%;
   text-align: center;
-  display: inline-grid;
-  
-  
 }
-
-
-
-
+.main-menu:hover ul
+ {
+	display: block; 
+ }
 .main-menu li {
   position: relative;
+  border: none;
+  
+
   display: block;
   width: 100%;
   text-align: center;
-  border: none;
 }
-
+.main-menu li:hover {
+  background-color: rgb(6, 84, 136);
+}
 .main-menu li > a {
   position: relative;
-  display: table;
   border-collapse: collapse;
   border-spacing: 0;
   color: #eaeaea;
-  font-family: arial;
+  font-family: vazir;
   font-size: 14px;
   text-decoration: none;
   transition: all 0.1s linear;
   font-size: 1.2em;
 }
+ 
+/* end of main menu syle------------------------------------------------------------------------ */
 
 
 
 
 
 
-ul {
-  list-style-type: none;
-  margin-top:-10px;
-  margin-bottom:80px;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  font-size: 2em;
-  border-bottom: 1px solid black;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-}
 
 @media only screen and (max-width: 630px) {
   
@@ -125,44 +126,47 @@ ul {
   
    
 }
-
-  li {
+/* top menu style start *******************************************************************************/
+ul {
+  list-style-type: none;
+  margin-top:-10px;
+  margin-bottom:80px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  font-size: 2em;
+  border-bottom: 0px solid black;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+ li {
     float: right;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
-    
+    font-family: vazir;
   }
   .logo,.login,.signup
   {
     float: left;
   }
-  
-  
-  
-  
-  li a, .dropbtn {
+li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
     padding:  14px 16px;
     text-decoration: none;
   }
-  li a:hover
+  .top-menu li a:hover
   {
-   
-    background-color: rgb(44, 42, 42);
+    background-color: rgb(6, 84, 136);
     border-radius: 7px;
   }
-  
   .dropdown:hover .dropbtn {
     background-color:rgb(162, 109, 179);
-   
   }
-  
-  li.dropdown {
+   li.dropdown {
     display: inline-block;
   }
-  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -172,11 +176,9 @@ ul {
     border-radius: 5px;
     z-index: 1;
   }
-  
   .dropdown .dropbtn::after {
    content: ' \25BE';
   }
-  
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -184,7 +186,6 @@ ul {
     display: block;
     text-align: right;
   }
-  
   .dropdown-content a:hover {
     background-color: rgb(162, 109, 179);
   }
@@ -192,9 +193,7 @@ ul {
   .dropdown:hover .dropdown-content {
     display: block;
   }
- 
-
-
+  /* top menu style end************************************************************************ */
 .container {
     background-color: rgb(245, 245, 245);
     font-family: iransansdn;
@@ -214,9 +213,9 @@ ul {
 	font-style: normal;
 	font-weight: bold;
 	src: url('../fonts/eot/iransansdnbold.eot');
-	src: url('../fonts/eot/iransansdnbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../fonts/woff2/iransansdnbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../fonts/woff/iransansdnbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	src: url('../fonts/eot/iransansdnbold.eot?#iefix') format('embedded-opentype'), 
+		 url('../fonts/woff2/iransansdnbold.woff2') format('woff2'),
+		 url('../fonts/woff/iransansdnbold.woff') format('woff'), 
 		 url('../fonts/ttf/iransansdnbold.ttf') format('truetype');
 }
 
@@ -225,9 +224,9 @@ ul {
 	font-style: normal;
 	font-weight: 300;
 	src: url('../fonts/eot/iransansdnlight.eot');
-	src: url('../fonts/eot/iransansdnlight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../fonts/woff2/iransansdnlight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../fonts/woff/iransansdnlight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	src: url('../fonts/eot/iransansdnlight.eot?#iefix') format('embedded-opentype'),  
+		 url('../fonts/woff2/iransansdnlight.woff2') format('woff2'),  
+		 url('../fonts/woff/iransansdnlight.woff') format('woff'),  
 		 url('../fonts/ttf/iransansdnlight.ttf') format('truetype');
 }
 
@@ -236,8 +235,15 @@ ul {
 	font-style: normal;
 	font-weight: normal;
 	src: url('../fonts/eot/iransansdn.eot');
-	src: url('../fonts/eot/iransansdn.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../fonts/woff2/iransansdn.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../fonts/woff/iransansdn.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	src: url('../fonts/eot/iransansdn.eot?#iefix') format('embedded-opentype'),  
+		 url('../fonts/woff2/iransansdn.woff2') format('woff2'),  
+		 url('../fonts/woff/iransansdn.woff') format('woff'),  
 		 url('../fonts/ttf/iransansdn.ttf') format('truetype');
 }
+@font-face {
+  font-family: "Vazir";
+  src: url("font/Vazir.woff") format("woff");
+}
+@font-face {
+  font-family: "Vazir";
+  src: url("font/Vazir.woff2") format("woff2");

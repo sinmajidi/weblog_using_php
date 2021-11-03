@@ -10,7 +10,11 @@
       <a href="#link3">لینک 3</a>
     </div>
   </li> -->
-  <li class="logo"><a href="weblog.php">لوگو</a></li>
+  <li class="logo">
+    <a href="weblog.php">
+      <img alt="LOGO" src="img/logo.png" width="70" height="35">
+    </a>
+  </li>
   <li class="login"><a href="login.php">ورود</a></li>
   <li class="signup"><a href="register.php">ثبت نام</a></li> 
 </ul>
