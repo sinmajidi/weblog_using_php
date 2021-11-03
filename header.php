@@ -15,8 +15,8 @@
       <img alt="LOGO" src="img/logo.png" width="70" height="35">
     </a>
   </li>
-  <li class="login"><a href="login.php">ورود</a></li>
-  <li class="signup"><a href="register.php">ثبت نام</a></li> 
+  <li class="login"><a href="/login.php">ورود</a></li>
+  <li class="signup"><a href="/register.php">ثبت نام</a></li> 
 </ul>
 <nav class="main-menu">
       <ul>
