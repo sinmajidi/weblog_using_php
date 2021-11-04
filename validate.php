@@ -21,7 +21,7 @@ if (mysqli_num_rows($result) > 0) {
         else
         {
            
-            echo '<script type="text/javascript">alert("Wrong Username or Password");window.location=\'login.php\';</script>';
+            echo '<script type="text/javascript">alert("کلمه عبور یا رمز اشتباه است");window.location=\'login.php\';</script>';
             
             
             

@@ -1,7 +1,7 @@
 
 <ul class="top-menu">
   <li><a href="weblog.php">خانه</a></li>
-  <li><a href="#news">دسته</a></li>
+  <li><a href="courses.php"> دوره های آموزشی  </a></li>
   <!-- <li class="dropdown">
     <a  class="dropbtn">مقالات</a>
     <div class="dropdown-content">
@@ -15,8 +15,8 @@
       <img alt="LOGO" src="img/logo.png" width="70" height="35">
     </a>
   </li>
-  <li class="login"><a href="/login.php">ورود</a></li>
-  <li class="signup"><a href="/register.php">ثبت نام</a></li> 
+  <li class="login"><a href="login.php">ورود</a></li>
+  <li class="signup"><a href="register.php">ثبت نام</a></li> 
 </ul>
 <nav class="main-menu">
       <ul>
@@ -26,7 +26,7 @@
         </li>
         
         <li>
-          <a href="#"> دسته  </a>
+          <a href="courses.php"> دوره های آموزشی  </a>
         </li>
 
         <li >
