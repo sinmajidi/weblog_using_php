@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) > 0) {
             $cookie_name = "user";
             $cookie_value = $row["adminname"];
             setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
-            header("Location:adminpage.php");
+            header("Location:weblog.php");
         }
         else
         {

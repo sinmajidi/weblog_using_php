@@ -7,7 +7,12 @@
 </head>
 <header>
 <?php
+$cookie_name = "user";
+if(isset($_COOKIE[$cookie_name]))
+include_once('header_logined.php');
+if(!isset($_COOKIE[$cookie_name]))
 include_once('header.php');
+
 ?>
 </header>
 
