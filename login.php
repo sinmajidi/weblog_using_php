@@ -16,6 +16,8 @@ include_once('header.php');
 <form action="validate.php" method="post">
   <div class="container">
     <div class="login">
+    <h1>ورود </h1>
+      <hr>
       <div class="login_grid">
         <label for="email"><b>ایمیل</b></label>
         <input type="text" placeholder="ایمیل" name="email" id="email" required>

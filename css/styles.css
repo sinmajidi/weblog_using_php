@@ -180,7 +180,7 @@ ul {
     border-radius: 10px;
     font-family: vazir;
   }
-  .logo,.login,.signup
+  .logo,.logout,.login,.signup
   {
     float: left;
   }
@@ -426,6 +426,23 @@ li a, .dropbtn {
   background: #333;
   color: whitesmoke;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.logout input
+{
+  background: none;
+  border: 1px solid #af0000;
+  border-radius: 20%;
+  padding: 10%;
+  margin-top: 10%;
+  color: #af0000;
+  font-size: 1em;
+  float: left;
+}
+.logout input:hover
+{
+  background-color: #af0000;
+  color: #eaeaea;
+  
 }
 
 
